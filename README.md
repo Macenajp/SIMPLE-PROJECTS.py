@@ -12,7 +12,7 @@ The purpose of these projects is to put basic Python concepts into practice.
 
 *(New projects will be added as studies progress!)*
 
-
+---
 
 ## 🎯 Meus Projetos Iniciais em Python
 
