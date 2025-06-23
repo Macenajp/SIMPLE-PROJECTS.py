@@ -1,6 +1,6 @@
 # SIMPLE-PROJECTS.py
 
-# 🐍 Meus Projetos Iniciais em Python
+# 🎯 Meus Projetos Iniciais em Python
 
 Este repositório reúne alguns dos meus primeiros projetos (e exercícios) desenvolvidos enquanto estudo lógica de programação e Python.
 O objetivo desses projetos é colocar em prática conceitos básicos de Python.
