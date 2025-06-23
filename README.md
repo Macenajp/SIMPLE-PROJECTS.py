@@ -26,5 +26,3 @@ O objetivo desses projetos é colocar em prática conceitos básicos de Python.
 
 
 *(Novos projetos serão adicionados conforme o avanço nos estudos!)*
-
----
