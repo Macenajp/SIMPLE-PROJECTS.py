@@ -33,9 +33,6 @@ def resultado_media(media):
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
 
-    else:
-        print("Insira valores adequados!")
-
 def main():
     try:
         nota1 = float(input('Insira sua primeira nota: '))
