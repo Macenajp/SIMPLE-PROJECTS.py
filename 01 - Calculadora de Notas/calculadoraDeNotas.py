@@ -13,11 +13,6 @@ def divisao_soma(soma):
 
 def resultado_média(média):
 
-feedbackRuimPrint = random.choice(feedbackRuim)
-feedbackMédioPrint = random.choice(feedbackMédio)
-feedbackÓtimoPrint = random.choice(feedbackÓtimo)
-feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
-
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
@@ -33,6 +28,11 @@ feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
     elif 9 <= média <= 10:
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
+
+feedbackRuimPrint = random.choice(feedbackRuim)
+feedbackMédioPrint = random.choice(feedbackMédio)
+feedbackÓtimoPrint = random.choice(feedbackÓtimo)
+feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
 
 def main():
     while True:
