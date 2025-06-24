@@ -1,3 +1,5 @@
+from time import sleep
+
 def seleçãoDeOperação():
     print("Qual o tipo de operação que você quer fazer. \n0 -> Sair \n1 -> Soma \n2 -> Subtração \n3 -> Divisão comum\n4 -> Multiplicação \n5 -> Divisão inteira \n6 -> Resto de uma divisão")
     return int(input("\nEscolha: "))
@@ -20,6 +22,7 @@ def divInteira(numero1, numero2):
 def restoDaDivisão(numero1, numero2):
    return numero1 % numero2
 
+
 def main():
     while True:
         try:
@@ -27,22 +30,25 @@ def main():
 
             if escolha == 0:
                 print("Obrigado por testar essa calculadora, volte sempre!")
+                sleep(1)
                 break
 
-          
+
             if escolha == 1:
                 print("Muito bem, você escolheu 'soma'. Quais números você quer somar?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 print(f"\nO resultado é: {soma(numero1, numero2):.2f}")
                 print("============================================\n")
                 continue
 
-          
+
             elif escolha == 2:
                 print("Muito bem, você escolheu 'subtração'. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 print(f"\nO resultado é: {subtração(numero1, numero2):.2f}")
                 print("====================================\n")
                 continue
@@ -52,6 +58,7 @@ def main():
                 print("Muito bem, você escolheu 'divisão comum'. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 if numero2 == 0:
                     print("\nImpossível com esse número.\n")
                     print("====================================\n")
@@ -60,20 +67,22 @@ def main():
                 print("====================================\n")
                 continue
 
-          
+
             elif escolha == 4:
                 print("Muito bem, você escolheu 'multiplicação'. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 print(f"\nO resultado é: {multiplicação(numero1, numero2):.2f}")
                 print("====================================\n")
                 continue
 
-        
+
             elif escolha == 5:
                 print("Muito bem, você escolheu 'divisão inteira'. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 if numero2 == 0:
                     print("\nImpossível com esse número.\n")
                     print("====================================\n")
@@ -82,11 +91,12 @@ def main():
                 print("====================================\n")
                 continue
 
-          
+
             elif escolha == 6:
                 print("Muito bem, você quer saber o 'resto de uma divisão'. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
+                sleep(1)
                 if numero2 == 0:
                     print("\nImpossível com esse número.\n")
                     print("====================================\n")
@@ -95,10 +105,11 @@ def main():
                 print("====================================\n")
                 continue
 
-          
+
             else:
                 print("\nEscolha uma das opções oferecidas!")
                 continue
+
 
             break
         except ValueError:
