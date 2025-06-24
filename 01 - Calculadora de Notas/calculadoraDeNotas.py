@@ -12,7 +12,6 @@ def divisao_soma(soma):
     return soma / 3
 
 def resultado_média(média):
-
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
