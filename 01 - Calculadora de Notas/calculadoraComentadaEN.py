@@ -18,7 +18,7 @@ def soma_total(nota1, nota2, nota3):
     return nota1 + nota2 + nota3
 
 # Function (def) where the final result of "def soma_total" will be divided by three and thus make the user's final average.
-  def divisao_soma(soma):
+def divisao_soma(soma):
     return soma / 3
 
 # This function will show the user their “status” and their “feedback” from the final result of the grade calculation.
