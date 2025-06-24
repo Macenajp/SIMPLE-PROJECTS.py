@@ -26,7 +26,7 @@ def multiplicação(numero1, numero2):
 def divInteira(numero1, numero2):
     return numero1 // numero2
 
-# Função para informar a conta para saber o resto da divisão dos números escolhidos
+# Função que calcula o resto da divisão dos números escolhidos
 def restoDaDivisão(numero1, numero2):
    return numero1 % numero2
 
