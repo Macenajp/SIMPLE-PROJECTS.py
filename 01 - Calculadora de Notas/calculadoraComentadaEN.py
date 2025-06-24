@@ -40,25 +40,28 @@ def resultado_média(média):
         print(feedbackFantáticoPrint)
 
 def main():
-    # The “try” is used to ‘try’ to execute the following section of code, if there is an exception, it will be passed to the “except”.
-    try:
-        nota1 = float(input('Insira sua primeira nota: '))
-        nota2 = float(input('Insira sua segunda nota: '))
-        nota3 = float(input('Insira sua terceira nota: '))
+    # If the user enters valid NUMBERS, the loop will end and move on, calculating and printing the messages. If any number negative or greater than 10 is entered, it will "print" a message stating that only numbers between 0 and 10 are valid and then the "inputs" will appear again.
+    while True:
+        # O "try" serve para "tentar" executar a seguinte sessão do código, se houver alguma exceção, passará para o "except"
+        try:
+            nota1 = float(input('Insira sua primeira nota: '))
+            nota2 = float(input('Insira sua segunda nota: '))
+            nota3 = float(input('Insira sua terceira nota: '))
 
-        if not (0 <= nota1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota3 <= 10):
-            print("As notas devem estar entre 0 e 10.")
-            return
+            if not (0 <= nota1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota3 <= 10):
+                print(f"\nAs notas devem estar entre 0 e 10.")
+                continue
 
-        soma = soma_total(nota1, nota2, nota3)
-        média = divisao_soma(soma)
+            soma = soma_total(nota1, nota2, nota3)
+            média = divisao_soma(soma)
 
-        print(f"\nA soma total de suas notas é: {soma}")
-        print(f"Sua média é: {média:.2f}\n")
+            print(f"\nA soma total de suas notas é: {soma}")
+            print(f"Sua média é: {média:.2f}\n")                 # The “.2f” means that only two characters will appear after the decimal point
 
-        resultado_média(média)
+            resultado_média(média)
+            break
 
-  # If any value entered by the user is negative, or is greater than “10”, this message will appear on the console.
-    except ValueError:
-        print("Insira apenas números válidos.")
+        # If the user enters a character that is not a number
+        except ValueError:
+            print("Insira apenas números válidos.")
 main()
