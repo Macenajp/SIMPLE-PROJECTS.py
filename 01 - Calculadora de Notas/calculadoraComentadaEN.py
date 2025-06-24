@@ -23,6 +23,7 @@ def divisao_soma(soma):
 
 # This function will show the user their “status” and their “feedback” from the final result of the grade calculation.
 def resultado_média(média):
+
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
@@ -38,6 +39,11 @@ def resultado_média(média):
     elif 9 <= média <= 10:
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
+
+feedbackRuimPrint = random.choice(feedbackRuim)
+feedbackMédioPrint = random.choice(feedbackMédio)
+feedbackÓtimoPrint = random.choice(feedbackÓtimo)
+feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
 
 def main():
     # If the user enters valid NUMBERS, the loop will end and move on, calculating and printing the messages. If any number negative or greater than 10 is entered, it will "print" a message stating that only numbers between 0 and 10 are valid and then the "inputs" will appear again.
