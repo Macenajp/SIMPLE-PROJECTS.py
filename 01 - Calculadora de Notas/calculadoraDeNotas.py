@@ -16,20 +16,20 @@ def soma_total(nota1, nota2, nota3):
 def divisao_soma(soma):
     return soma / 3
 
-def resultado_media(media):
-    if media <= 4:
+def resultado_média(média):
+    if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
 
-    elif 4 < media <= 6.99:
+    elif 4 < média <= 6.99:
         print("Status: RECUPERAÇÃO!")
         print(feedbackMédioPrint)
 
-    elif 7 <= media <= 8.99:
+    elif 7 <= média <= 8.99:
         print("Status: APROVADO!")
         print(feedbackÓtimoPrint)
 
-    elif 9 <= media <= 10:
+    elif 9 <= média <= 10:
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
 
@@ -45,12 +45,12 @@ def main():
                 continue
 
             soma = soma_total(nota1, nota2, nota3)
-            media = divisao_soma(soma)
+            média = divisao_soma(soma)
 
             print(f"\nA soma total de suas notas é: {soma}")
-            print(f"Sua média é: {media:.2f}\n")
+            print(f"Sua média é: {média:.2f}\n")
 
-            resultado_media(media)
+            resultado_média(média)
             break
 
         except ValueError:
