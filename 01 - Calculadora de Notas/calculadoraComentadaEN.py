@@ -39,7 +39,6 @@ def resultado_média(média):
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
 
-
 def main():
     # The “try” is used to ‘try’ to execute the following section of code, if there is an exception, it will be passed to the “except”.
     try:
