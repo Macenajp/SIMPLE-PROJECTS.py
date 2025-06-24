@@ -5,11 +5,6 @@ feedbackMédio = ["Na trave! Mas ainda é completamente possível recuperar! Est
 feedbackÓtimo = ["Uau! Você está de parabéns por conquistar essa nota! só lembre de não se acomodar rsrsrs.", "Fantástico! Conseguiu uma boa nota, está de parabéns!", "Demais! Você foi muito bem com essas notas!"]
 feedbackFantáticoPrint = ["Você merece demais! Parabéns pela dedicação e esforço, você foi exemplar!", "Simplesmente belíssimas notas você conquistou! O seu esforço foi notável, continue assim e irá muito longe! Parabéns."]
 
-feedbackRuimPrint = random.choice(feedbackRuim)
-feedbackMédioPrint = random.choice(feedbackMédio)
-feedbackÓtimoPrint = random.choice(feedbackÓtimo)
-feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
-
 def soma_total(nota1, nota2, nota3):
     return nota1 + nota2 + nota3
 
@@ -17,6 +12,12 @@ def divisao_soma(soma):
     return soma / 3
 
 def resultado_média(média):
+
+feedbackRuimPrint = random.choice(feedbackRuim)
+feedbackMédioPrint = random.choice(feedbackMédio)
+feedbackÓtimoPrint = random.choice(feedbackÓtimo)
+feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
+
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
