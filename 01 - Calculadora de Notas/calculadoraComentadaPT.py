@@ -23,6 +23,7 @@ def divisao_soma(soma):
 
 # Função onde irá apresentar ao usuário o seu "status" e o seu "feedback" a partir do resultado final do cálculo das notas.
 def resultado_média(média):
+
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
@@ -38,6 +39,11 @@ def resultado_média(média):
     elif 9 <= média <= 10:
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
+
+feedbackRuimPrint = random.choice(feedbackRuim)
+feedbackMédioPrint = random.choice(feedbackMédio)
+feedbackÓtimoPrint = random.choice(feedbackÓtimo)
+feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
 
 def main():
     # Caso o usuário digite NÚMEROS válidos, o looping encerra, e passará adiante, fazendo o cálculo e imprimindo as mensagens. Se for digitado algum número negativo ao maior que 10, vai "printar" uma mensagem informando que apenas númeors entre 0 e 10 são válidos e em seguida, os "inputs" aparecerão novamente.
