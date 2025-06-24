@@ -7,7 +7,7 @@ feedbackMédio = ["Na trave! Mas ainda é completamente possível recuperar! Est
 feedbackÓtimo = ["Uau! Você está de parabéns por conquistar essa nota! só lembre de não se acomodar rsrsrs.", "Fanstástico! Conseguiu uma boa nota, está de parabéns!", "Demais! Você foi muito bem com essas notas!"]
 feedbackFantáticoPrint = ["Você merece demais! Parabéns pela dedicação e esforço, você foi exemplar!", "Simplesmente belíssimas notas você conquistou! O seu esforço foi notável, continue assim e irá muito longe! Parabéns."]
 
-# Uso da bibliotaca nas strings, para poder "printar" quando rodar o código.
+# Uso da biblioteca nas strings, para poder "printar" quando rodar o código.
 feedbackRuimPrint = random.choice(feedbackRuim)
 feedbackMédioPrint = random.choice(feedbackMédio)
 feedbackÓtimoPrint = random.choice(feedbackÓtimo)
