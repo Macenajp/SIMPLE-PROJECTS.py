@@ -3,7 +3,7 @@ from time import sleep
 
 # Session where the user will choose the type of mathematical operation (or exit execution)
 def seleçãoDeOperação():
-    print("Qual o tipo de operação que você quer fazer. \n0 -> Sair \n1 -> Soma \n2 -> Subtração \n3 -> Divisão comum\n4 -> Multiplicação \n5 -> Divisão inteira \n6 -> Resto de uma divisão")
+    print("Qual o tipo de operação que você quer fazer. \n0 -> Sair \n \n1 -> Soma",(" ") * 12, "5 -> Divisão inteira \n2 -> Subtração", (" ") * 7, "6 -> Resto de uma divisão \n3 -> Divisão comum", (" ") * 3, "7 -> Exponenciação \n4 -> Multiplicação")
     return int(input("\nEscolha: "))
 
 # Function to add the two numbers chosen
@@ -29,6 +29,9 @@ def seleçãoDeOperação():
 # Function that calculates the remainder of the division of the chosen numbers
 def restoDaDivisão(numero1, numero2):
    return numero1 % numero2
+
+def exponenciação(numero1, numero2):
+   return numero1 ** numero2
 
 # Main session, where everything that appears to the user passes through here.
   def main():
@@ -115,6 +118,15 @@ def restoDaDivisão(numero1, numero2):
                 print("====================================\n")
                 continue
 
+            elif escolha == 7:
+                print("Muito bem, você quer saber o resultado de uma exponenciação. Quais números você quer usar no cálculo?")
+                numero1 = int(input("Primeiro número: "))
+                numero2 = int(input("Segundo número: "))
+                sleep(1)
+                print(f"\nO resultado é: {exponenciação(numero1, numero2):.2f}")
+                print("====================================\n")
+                continue
+
 
             else:
                 print("\nEscolha uma das opções oferecidas!")
@@ -122,5 +134,5 @@ def restoDaDivisão(numero1, numero2):
 
             break
         except ValueError:
-            print("Escolha um valor válido (entre 0 e 6)!")
+            print("Escolha um valor válido (entre 0 e 7)!")
 main()
