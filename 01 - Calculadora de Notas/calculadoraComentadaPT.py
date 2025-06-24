@@ -23,7 +23,6 @@ def divisao_soma(soma):
 
 # Função onde irá apresentar ao usuário o seu "status" e o seu "feedback" a partir do resultado final do cálculo das notas.
 def resultado_média(média):
-
     if média <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
