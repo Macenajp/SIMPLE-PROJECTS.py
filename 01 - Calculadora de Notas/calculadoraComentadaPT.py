@@ -22,42 +22,46 @@ def divisao_soma(soma):
     return soma / 3
 
 # Função onde irá apresentar ao usuário o seu "status" e o seu "feedback" a partir do resultado final do cálculo das notas.
-def resultado_média(média):
-    if média <= 4:
+def resultado_media(media):
+    if media <= 4:
         print("Status: REPROVADO!")
         print(feedbackRuimPrint)
 
-    elif 4 < média <= 6.99:
+    elif 4 < media <= 6.99:
         print("Status: RECUPERAÇÃO!")
         print(feedbackMédioPrint)
 
-    elif 7 <= média <= 8.99:
+    elif 7 <= media <= 8.99:
         print("Status: APROVADO!")
         print(feedbackÓtimoPrint)
 
-    elif 9 <= média <= 10:
+    elif 9 <= media <= 10:
         print("Status: APROVADO!")
         print(feedbackFantáticoPrint)
 
 def main():
-    # O "try" serve para "tentar" executar a seguinte sessão do código, se houver alguma exceção, passará para o "except"
-    try:
-        nota1 = float(input('Insira sua primeira nota: '))
-        nota2 = float(input('Insira sua segunda nota: '))
-        nota3 = float(input('Insira sua terceira nota: '))
+    # Caso o usuário digite NÚMEROS válidos, o looping encerra, e passará adiante, fazendo o cálculo e imprimindo as mensagens. Se for digitado algum número negativo ao maior que 10, vai "printar" uma mensagem informando que apenas númeors entre 0 e 10 são válidos e em seguida, os "inputs" aparecerão novamente.
+    while True:
+        # O "try" serve para "tentar" executar a seguinte sessão do código, se houver alguma exceção, passará para o "except"
+        try:
+            nota1 = float(input('Insira sua primeira nota: '))
+            nota2 = float(input('Insira sua segunda nota: '))
+            nota3 = float(input('Insira sua terceira nota: '))
 
-        if not (0 <= nota1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota3 <= 10):
-            print("As notas devem estar entre 0 e 10.")
-            return
+            if not (0 <= nota1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota3 <= 10):
+                print(f"\nAs notas devem estar entre 0 e 10.")
+                continue
 
-        soma = soma_total(nota1, nota2, nota3)
-        média = divisao_soma(soma)
+            soma = soma_total(nota1, nota2, nota3)
+            media = divisao_soma(soma)
 
-        print(f"\nA soma total de suas notas é: {soma}")
-        print(f"Sua média é: {média:.2f}\n")
+            print(f"\nA soma total de suas notas é: {soma}")
+            print(f"Sua média é: {media:.2f}\n")                # O ".2f" significa que só vai aparecer dois caracteres após a vírgula (ponto)
 
-        resultado_média(média)
+            resultado_media(media)
+            break
 
-    except ValueError:
-        print("Insira apenas números válidos.")
+        # Caso o usuário insira algum caractere que não seja número
+        except ValueError:
+            print("Insira apenas números válidos.")
 main()
