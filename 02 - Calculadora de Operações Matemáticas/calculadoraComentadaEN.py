@@ -118,6 +118,7 @@ def exponenciação(numero1, numero2):
                 print("====================================\n")
                 continue
 
+            # To calculate the result of exponentiation
             elif escolha == 7:
                 print("Muito bem, você quer saber o resultado de uma exponenciação. Quais números você quer usar no cálculo?")
                 numero1 = int(input("Primeiro número: "))
