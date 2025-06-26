@@ -45,7 +45,7 @@ feedbackÓtimoPrint = random.choice(feedbackÓtimo)
 feedbackFantáticoPrint = random.choice(feedbackFantáticoPrint)
 
 def main():
-    # Caso o usuário digite NÚMEROS válidos, o looping encerra, e passará adiante, fazendo o cálculo e imprimindo as mensagens. Se for digitado algum número negativo ao maior que 10, vai "printar" uma mensagem informando que apenas númeors entre 0 e 10 são válidos e em seguida, os "inputs" aparecerão novamente.
+    # Caso o usuário digite números válidos, o looping encerra, e passará adiante, fazendo o cálculo e imprimindo as mensagens. Se for digitado algum número negativo ao maior que 10, vai "printar" uma mensagem informando que apenas númeors entre 0 e 10 são válidos e em seguida, os "inputs" aparecerão novamente.
     while True:
         # O "try" serve para "tentar" executar a seguinte sessão do código, se houver alguma exceção, passará para o "except"
         try:
