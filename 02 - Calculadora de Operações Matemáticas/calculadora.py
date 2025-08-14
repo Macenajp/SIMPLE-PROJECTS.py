@@ -35,7 +35,7 @@ def main():
                 sleep(1)
                 break
 
-            if escolha == 1:
+            elif escolha == 1:
                 print("Muito bem, você escolheu 'soma'. Quais números você quer somar?")
                 numero1 = int(input("Primeiro número: "))
                 numero2 = int(input("Segundo número: "))
