@@ -1,32 +1,32 @@
 # Biblioteca que será usada para gerar "delay" durante a execução de determinadas partes do código, deixando mais fluido
 from time import sleep
 
-# Sessão onde o usuário vai escolher o tipo de operação matemática (ou sair da execução)
+# Sessão onde o usuário vai escolher o tipo de operação matemática (ou sair da execução).
 def seleçãoDeOperação():
     print("Qual o tipo de operação que você quer fazer. \n0 -> Sair \n \n1 -> Soma",(" ") * 12, "5 -> Divisão inteira \n2 -> Subtração", (" ") * 7, "6 -> Resto de uma divisão \n3 -> Divisão comum", (" ") * 3, "7 -> Exponenciação \n4 -> Multiplicação")
     return int(input("\nEscolha: "))
 
-# Função para somar os dois números escolhidos
+# Função para somar os dois números escolhidos.
 def soma(numero1, numero2):
     return numero1 + numero2
 
-# Função para calcular a subtração
+# Função para calcular a subtração.
 def subtração(numero1, numero2):
     return numero1 - numero2
 
-# Calcula a divisão entre os dois números
+# Calcula a divisão entre os dois números.
 def divisão(numero1, numero2):
     return numero1 / numero2
 
-# Função para calcular a multiplicação
+# Função para calcular a multiplicação.
 def multiplicação(numero1, numero2):
     return numero1 * numero2
 
-# Calcula divisão inteira dos dois números escolhidos
+# Calcula divisão inteira dos dois números escolhidos.
 def divInteira(numero1, numero2):
     return numero1 // numero2
 
-# Função que calcula o resto da divisão dos números escolhidos
+# Função que calcula o resto da divisão dos números escolhidos.
 def restoDaDivisão(numero1, numero2):
    return numero1 % numero2
 
